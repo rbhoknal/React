@@ -1,16 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement("div", { id: "parent" }, [
-    React.createElement("div", { id: "child", key: "child1" }, [
-        React.createElement("h1", { key: "h1-1" }, "I am an h1 tag"),
-        React.createElement("h2", { key: "h2-1" }, "this is a h2 tag of child 1")
-    ]),
-    React.createElement("div", { id: "child2", key: "child2" }, [
-        React.createElement("h1", { key: "h1-2" }, "I'm an h1 tag of child2"),
-        React.createElement("h2", { key: "h2-2" }, "I'm an h2 tag")
-    ]),
-]);
+const heading = React.createElement("div", { id: "heading" }, "Namaste React 🚀");
+console.log("heading", heading);
 
+//JSX - HTML-like or XML-like syntax
+const jsxheading = <h1 id="heading">Namaste React using JSX 🚀</h1>
+console.log('jsxHeading', jsxheading);
+ 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent);
+root.render(jsxheading);
