@@ -28,13 +28,13 @@ const styleCard = {
 const RestaurantCard = (props) => {
     const { resData } = props;
 
-    const { name, avgRating, cuisines, costForTwo, deliveryTime} = resData?.data;
+    const { cloudinaryImageId, name, avgRating, cuisines, costForTwo, deliveryTime} = resData?.data;
 
     return (
         <div className="res-card" style={{backgroundColor: "#f0f0f0"}}>
-            <img className="res-logo" alt="res-logo" src="https://as2.ftcdn.net/jpg/13/94/92/81/1000_F_1394928125_Pf5kOUy6iB2bb81f4jBlncmzPbVK6utQ.jpg" />
+            <img className="res-logo" alt="res-logo" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +  cloudinaryImageId} />
             <h3>{name}</h3>
-            <h4>{cuisines}</h4>
+            <h4>{cuisines.join(" , ")}</h4>
             <h4>{avgRating}</h4>
             <h4>₹{costForTwo / 100} For TWO</h4>
             <h4>{deliveryTime} minutes</h4>
@@ -53,7 +53,7 @@ const resList = [
       city: "1",
       area: "BTM Layout",
       totalRatingsString: "500+ ratings",
-      cloudinaryImageId: "bdcd233971b7c81bf77e1fa4471280eb",
+      cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2026/7/4/ee7252a9-dca3-4ed9-8dd1-e66bbf87d13d_1402315.jpg",
       cuisines: ["Burgers", "Biryani", "American", "Snacks", "Fast Food"],
       tags: [],
       costForTwo: 40000,
@@ -178,7 +178,7 @@ const resList = [
       city: "1",
       area: "Koramangala",
       totalRatingsString: "1000+ ratings",
-      cloudinaryImageId: "xqwpuhgnsaf18te7zvtv",
+      cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/14/b2621283-c601-4343-87a0-798c1e2a3197_870104.jpg",
       cuisines: [
         "Biryani",
         "Andhra",
@@ -305,7 +305,7 @@ const resList = [
       city: "1",
       area: "Tavarekere",
       totalRatingsString: "5000+ ratings",
-      cloudinaryImageId: "bmwn4n4bn6n1tcpc8x2h",
+      cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2025/12/22/5b73c084-0066-4f6c-bc94-0a8dd338ea0f_1267068.jpg",
       cuisines: ["Kerala", "Chinese"],
       tags: [],
       costForTwo: 30000,
@@ -440,7 +440,7 @@ const resList = [
       city: "1",
       area: "Koramangala",
       totalRatingsString: "1000+ ratings",
-      cloudinaryImageId: "soegobqsiqvhmkfvnnkj",
+      cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/24/15345730-3e92-4301-8bf8-d3d327d96ce2_1013619.jpg",
       cuisines: ["Chinese", "Pan-Asian"],
       tags: [],
       costForTwo: 40000,
@@ -565,7 +565,7 @@ const resList = [
       city: "1",
       area: "BTM Layout",
       totalRatingsString: "1000+ ratings",
-      cloudinaryImageId: "a27weqanhnszqiuzsoik",
+      cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/7/63a2b5b2-8f13-4dc6-bd88-0689faa5192c_739118.jpg",
       cuisines: ["Kerala", "Biryani", "Beverages"],
       tags: [],
       costForTwo: 20000,
@@ -700,7 +700,7 @@ const resList = [
       city: "1",
       area: "Koramangala",
       totalRatingsString: "100+ ratings",
-      cloudinaryImageId: "f99d05e4f7884caa8646c70b0b752c7a",
+      cloudinaryImageId: "xgwb49gf1wsle9zadntt",
       cuisines: ["Home Food", "North Indian", "Thalis"],
       tags: [],
       costForTwo: 20000,
@@ -820,7 +820,7 @@ const resList = [
       city: "1",
       area: "Koramangala",
       totalRatingsString: "1000+ ratings",
-      cloudinaryImageId: "r4ufflqojich0r29efvc",
+      cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2024/8/15/e6070116-d684-45a1-9435-890cbcd25659_942276.jpg",
       cuisines: ["American", "Snacks", "Turkish", "Portuguese", "Continental"],
       tags: [],
       costForTwo: 30000,
@@ -945,7 +945,7 @@ const resList = [
       city: "1",
       area: "Koramangala",
       totalRatingsString: "1000+ ratings",
-      cloudinaryImageId: "un4omn7rcunkmlw6vikr",
+      cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2025/1/10/1b14de7e-7efc-4eaa-aa07-95f1ab50dc58_717421%20(1).jpg",
       cuisines: ["North Indian", "Kebabs", "Biryani"],
       tags: [],
       costForTwo: 45000,
@@ -1065,7 +1065,7 @@ const resList = [
       city: "1",
       area: "Btm Layout",
       totalRatingsString: "1000+ ratings",
-      cloudinaryImageId: "mdipoyzfzsa7n7igskht",
+      cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2025/9/9/aeaddddd-7fcf-427b-82ae-55ce7cc8c8c0_1030806.JPG",
       cuisines: ["North Indian", "Biryani"],
       tags: [],
       costForTwo: 50000,
@@ -1184,7 +1184,7 @@ const resList = [
       city: "1",
       area: "Koramangala",
       totalRatingsString: "100+ ratings",
-      cloudinaryImageId: "ej90ytd5x7ffyl6ii7cn",
+      cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2026/3/30/a6e2c6c3-de5e-4d51-94ec-e1475abf95ba_577800.JPG",
       cuisines: ["South Indian"],
       tags: [],
       costForTwo: 75000,
@@ -1309,7 +1309,7 @@ const resList = [
       city: "1",
       area: "Koramangala",
       totalRatingsString: "1000+ ratings",
-      cloudinaryImageId: "yc0asfa2j9elggstyjg4",
+      cloudinaryImageId: "RX_THUMBNAIL/IMAGES/VENDOR/2025/12/22/5b73c084-0066-4f6c-bc94-0a8dd338ea0f_1267068.jpg",
       cuisines: ["Biryani", "Mughlai", "Indian", "Beverages"],
       tags: [],
       costForTwo: 25000,
