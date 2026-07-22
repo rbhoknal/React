@@ -9,7 +9,7 @@ const About = () => {
 
             <User name={"Rahul Saini"} location={"Dehradun"} contact={"rahulsaini87"} />
 
-            <UserClass name={"Will Smith (Class"} Location={"Manali (class)"} contact={"will@smith56"} />
+            <UserClass name={"Will Smith (Class)"} Location={"Manali (Class)"} contact={"will@smith56"} />
         </div>
     );
 };
