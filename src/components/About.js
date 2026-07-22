@@ -1,14 +1,35 @@
 import UserClass from "./UserClass";
+import { Component } from "react";
 
-const About = () => {
-    return (
-        <div>
-            <h1>About</h1>
-            <h2>This is Namaste React Web Series</h2>
+class About extends Component {
 
-            <UserClass name={"Will Smith (Class)"} Location={"Manali (Class)"} contact={"will@smith56"} />
-        </div>
-    );
-};
+    constructor(props){
+        super(props);
+        
+        console.log("Parent Constructor");
+    }
+
+    componentDidMount(){
+        console.log("Parent Component Did Mount");
+        //Api Call
+    }
+
+    render() {
+        console.log("Parent Render");
+
+        return (
+            <div>
+                <h1>About</h1>
+                <h2>This is Namaste React Web Series</h2>
+
+                <UserClass
+                    name={"Will Smith (Class)"}
+                    Location={"Manali (Class)"}
+                    contact={"will@smith56"}
+                />
+            </div>
+        );
+  }
+}
 
 export default About;
