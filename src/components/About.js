@@ -23,8 +23,18 @@ class About extends Component {
                 <h2>This is Namaste React Web Series</h2>
 
                 <UserClass
-                    name={"Will Smith (Class)"}
+                    name={"First"}
                     Location={"Manali (Class)"}
+                    contact={"will@smith56"}
+                />
+                <UserClass
+                    name={"Second"}
+                    Location={"Dehradun (Class)"}
+                    contact={"will@smith56"}
+                />
+                <UserClass
+                    name={"Third"}
+                    Location={"Shimla (Class)"}
                     contact={"will@smith56"}
                 />
             </div>
